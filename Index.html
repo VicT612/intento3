@@ -9,24 +9,25 @@
 </head>
 <body>
     <h1>Formulario para agregar contenido</h1>
-    <form action="" method="POST">
+    <form action="">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" required>
+            <input type="text" id="nombre" name="nombre" required data-form-input>
         </div>
         <div class="form-group">
             <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" required>
+            <input type="text" id="precio" name="precio" required data-form-input2>
         </div>
-        <button type="submit">Agregar</button>
+        <button type="submit" data-form-btn>Agregar</button>
     </form>
+    <div>
+        <table data-table>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
